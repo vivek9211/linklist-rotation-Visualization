@@ -9,7 +9,7 @@ function makeNode() {
     arr[i] = parseInt(numbers[i]);
   }
 
-  if(llSize != numbers.length) alert("Enter proper number of values");
+   if(llSize != numbers.length) alert("Enter proper number of values");
   else {
     var outerDiv = document.getElementById("outerdiv");
     for(let i=0; i < numbers.length; i++) {
@@ -77,4 +77,10 @@ function rotate() {
   setTimeout(function() {
     display();
   }, 5000);
+}
+
+function clearData() {
+  var outerDiv = document.getElementById("outerdiv").innerHTML = '';
+  var values = document.getElementById("values").value = '';
+  var size = document.getElementById("ll-size").value = '';
 }
